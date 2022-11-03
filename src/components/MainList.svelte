@@ -7,7 +7,7 @@
 	let list = [];
 	let params, promise;
 	async function reset(){
-		let request = await fetch('https://raw.githubusercontent.com/Uvacoder/ios-settings-urls-website-test/master/settings-info/settings-urls.md')
+		let request = await fetch('https://raw.githubusercontent.com/Uvacoder/ios-settings-url-collection/master/settings-info/settings-urls.')
 		let response = await request.text();
 		response = response.replace('# Settings URLs\n\n', '');
 		response = response.split('\n');
